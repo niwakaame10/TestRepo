@@ -2,16 +2,15 @@
 <html>
 <head>
 <title>サンプル</title>
-<script>
-window.onload = function() {
-  setInterval(function() {
-    var dd = new Date();
-    document.getElementById("T1").innerHTML = dd.toLocaleString();
-  }, 1000);
-}
-</script>
 </head>
-<body>
-<div id="T1"></div>
-</body>
+  <body>
+      <script src="default.js"></script>
+      <div id="T1"></div>
+      <p>あなたの名前は？</p>
+      <input type="text" id="name">
+      <button type="button" id="form-button" onclick="clickbutton()">入力</button>
+      <div id="form-text"></div>
+  </body>
+
+
 </html>
