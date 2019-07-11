@@ -51,7 +51,7 @@ function clickbutton() {
 
   array.push(name);
   if(count === 0){
-    document.getElementById("form-text").innerHTML = "はじめまして " + personAllay[3].name + " さん！";
+    document.getElementById("form-text").innerHTML = "はじめまして " + name + " さん！";
   }
 
   if(count === 1){
