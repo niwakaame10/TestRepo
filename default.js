@@ -6,31 +6,52 @@ window.onload = function() {
 }
 
 // グローバル変数
-var personAllay = {name:"" ,count:0};
+// 入力された人のリスト
+var personAllay = [];
 
-
-var personAllay = [
-  { name:"タマネギ", price:80, quantity:3 },
-  { name:"じゃがいも", price:60, quantity:5 },
-  { name:"ニンジン", price:40, quantity:4 }
-];
-
+// 入力時格納のためのクラス
+var personInfo = {name,count}
 
 var array = [];
 var count = 0;
 
+// 入力ボタン押下
 function clickbutton() {
   var name = document.getElementById("name").value;
- 　for(var i = 0;i <= array.length;i++){
+
+/*
+  //入力された名前が存在するかチェック
+  foreach(info in personAllay){
+
+    // 以前入力された名前の場合
+    if(name == info.name){
+      info.count = info.count + 1;
+      //break;
+    }
+    // 初めて入力された名前の場合
+    else{
+      personInfo.name = name;
+      personInfo.count = 1;
+      personAllay.push(personInfo);
+    }
+  }
+*/
+
+ for(var i = 0;i <= array.length;i++){
    if(name == array[i]){
      count = count + 1;
      break;
    }
  }
 
+  personInfo.name = "gorira";
+  personInfo.count = 1;
+
+  personAllay.push(personInfo);
+
   array.push(name);
   if(count === 0){
-    document.getElementById("form-text").innerHTML = "はじめまして " + name + " さん！";
+    document.getElementById("form-text").innerHTML = "はじめまして " + personAllay[3].name + " さん！";
   }
 
   if(count === 1){
