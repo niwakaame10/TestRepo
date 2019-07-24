@@ -5,12 +5,12 @@ window.onload = function() {
   }, 1000);
 }
 
+// 入力時格納のためのクラス
+var personInfo = {name,count};
+
 // グローバル変数
 // 入力された人のリスト
-var personAllay = [];
-
-// 入力時格納のためのクラス
-var personInfo = {name,count}
+var personAllay = [personInfo{name = "デフォルト",count = "0"}];
 
 var array = [];
 var currentCount = 0;
