@@ -10,7 +10,7 @@ var personInfo = {name,count};
 
 // グローバル変数
 // 入力された人のリスト
-var personAllay = [personInfo{name = "デフォルト",count = "0"}];
+var personAllay = [personInfo{name = "デフォルト",count = 0}];
 
 var array = [];
 var currentCount = 0;
@@ -23,7 +23,7 @@ function clickbutton() {
 
 
   //入力された名前が存在するかチェック
-  foreach(info in personAllay){
+  foreach(var info in personAllay){
 
     // 以前入力された名前の場合
     if(name == info.name){
